@@ -84,3 +84,6 @@ class Text2Text(APIModel):
         response = text.Convert()
         print(response)
         assert response["status"] == True and "Paris" in response["text"], "Response should contain 'Paris'."
+
+if(__name__ == "__main__"):
+    print(Text2Text.Convert())
